@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import './variables.scss';
 
 * {
@@ -30,7 +31,7 @@
             font-family: 'Raleway', sans-serif;
             font-weight: 500;
             font-size: 68px;
-            color: white;
+            color: $white;
             text-transform: uppercase;
             margin-bottom: 70px;
 
@@ -44,7 +45,7 @@
             font-family: 'Raleway', sans-serif;
             font-weight: 500;
             font-size: 48px;
-            color: white;
+            color: $white;
             text-transform: uppercase;
             margin-bottom: 55px;
         }
@@ -53,7 +54,7 @@
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
             font-size: 18px;
-            color: white;
+            color: $white;
             margin-bottom: 42px;
         }
 
@@ -61,28 +62,219 @@
             width: 270px;
             height: 58px;
             background-color: transparent;
-            border: 1px solid white;
+            border: 1px solid $white;
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
             font-size: 18px;
-            color: white;
+            color: $white;
             cursor: pointer;
+        }
+
+        .line {
+            width: 170px;
+            border-bottom: 1px solid $white;
+            margin-bottom: 42px;
         }
     }
 
-    .main-form {
+    .form {
         width: 470px;
         height: 450px;
-        background-color: white;
+        background-color: $white;
         border-radius: 10px;
         position: absolute;
         top: 300px;
         left: 880px;
+
+        .form-title {
+            font-family: "Open Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            color: $black;
+            text-transform: uppercase;
+            width: 367px;
+            height: 90px;
+            margin-top: 25px;
+            margin-left: 53px;
+        }
+
+        .form-line {
+            border: 1px solid #BDBDBD;
+            width: 370px;
+            margin-bottom: 35px;
+            margin-left: 50px;
+        }
+
+        .text-free {
+            font-family: "Open Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            color: #EC7979;
+        }
+        
+        .name-input, .email-input, .password-input {
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            color: #BDBDBD;
+            border: none;
+            width: 370px;
+            margin-bottom: 16px;
+            margin-left: 50px;
+        }
+        
+        .form-button {
+            background: #EC7979;
+            border-radius: 0px 0px 10px 10px;  
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            text-align: center;
+            height: 60px;
+            width: 470px;
+            color: white;
+            border: none;
+            margin-top: 65px;
+        }
+
     }
 }
 
-.line {
-    width: 170px;
-    border-bottom: 1px solid white;
-    margin-bottom: 42px;
+.info-tab {
+    .social-media-wrapper {
+        background-color: $light-pink;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .social-media-title {
+            h3 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                color: $gray;
+                width: 470px;
+                height: 42px;
+            }
+        }
+
+
+        .icons {
+            color: $gray;
+            font-size: 47px;
+            margin-left: auto;
+            display: flex;
+            gap: 50px;
+        }
+    }
 }
+
+.container {
+    border: 1px solid #C6CBCD;
+    width: 1170px;
+    height: 500px;
+    display: flex;
+    margin: 0px 0 50px 170px;
+
+    .tab-description {
+        display: flex;
+        flex-direction: column;
+        width: 570px;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    .tab-title {
+        font-family: "Open Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: left;
+        width: 570px;
+        height: 124px;
+    }
+
+    .tab-text {
+        width: 570px;
+        height: 210px;
+        margin-bottom: 27px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .tab-button {
+        width: 270px;
+        height: 58px;
+        background: #EC7979;
+        border: none;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.tab-image {
+    margin-left: 130px;
+}
+
+.tab {
+    margin: 100px 0 0 90px;
+    display: flex;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 252.5px;
+    align-items: flex-end;
+    padding-left: 79px;
+    
+    .tab-tab-one {
+        width: 201px;
+        display: flex;
+        transform: translate(0, 1px);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        height: 38px;
+        border-top: 1px solid #C6CBCD;
+        border-left: 2px solid #C6CBCD;
+        border-right: 2px solid #C6CBCD;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab-tab-two, .tab-tab-three {
+        width: 184px;
+        height: 38px;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
